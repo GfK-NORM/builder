@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
        $(lsb_release -cs) \
        stable" && \
     apt-get update && apt-get install -y \
-      docker-ce
+      docker-ce \
       mysql-client
 RUN curl https://bootstrap.pypa.io/get-pip.py | python
 RUN pip install awscli
